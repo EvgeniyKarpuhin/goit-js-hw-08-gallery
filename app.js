@@ -65,26 +65,4 @@ const galleryItems = [
   ];
 
 
-  const preview = {
-    gallery: document.querySelector('.js-gallery'),
-    Image: document.createElement('img'),
-    lightbox: document.querySelector('.lightbox'),
-    btn: document.querySelector('[data-action="close-lightbox"]'),
-    modal: document.querySelector('.lightbox__content'),
-    lightbox__image: document.querySelector('.lightbox__image'),
-  };
-
-  const newGallery = (preview, original, description) => 
-  `<li class= 'gallery__brend'>
-  <a class= 'gallery__link'
-  href = ${original}
-  >
-
-  <img class = 'gallery__image'
-  src = ${preview}
-  data-source = ${original}
-  alt = ${description}
-  />
-  </a>
-  </li>`
-
+  
