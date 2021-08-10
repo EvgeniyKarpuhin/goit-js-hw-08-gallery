@@ -1,5 +1,5 @@
 "use strict";
-import galleryItems from "./app.js";
+import images from "./app.js";
 
 const preview = {
     gallery: document.querySelector('.js-gallery'),
@@ -24,7 +24,7 @@ const preview = {
   </a>
   </li>`
 
-  const galleryPreview = galleryItems.reduce(
+  const galleryPreview = images.reduce(
     (el, item) => el + newGallery(item),
     ''
   );
