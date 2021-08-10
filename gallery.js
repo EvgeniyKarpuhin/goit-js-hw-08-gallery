@@ -10,7 +10,7 @@ const preview = {
     lightbox__image: document.querySelector('.lightbox__image'),
   };
 
-  const newGallery = (preview, original, description) => 
+  const newGallery = ({preview, original, description}) => 
   `<li class= 'gallery__brend'>
   <a class= 'gallery__link'
   href = ${original}
