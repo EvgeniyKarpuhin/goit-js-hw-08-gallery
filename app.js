@@ -64,7 +64,6 @@ const galleryItems = [
     },
   ];
 
-
   const preview = {
     gallery: document.querySelector('.js-gallery'),
     Image: document.createElement('img'),
