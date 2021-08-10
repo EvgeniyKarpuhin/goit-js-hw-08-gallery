@@ -44,6 +44,7 @@ const preview = {
       preview.lightbox.add('is-open');
       preview.lightbox__image.src = '';
       preview.lightbox__image.alt = '';
+    }
       window.addEventListener('key', clickKey);
     }
 
@@ -66,4 +67,3 @@ const preview = {
         clickClose();
       }
     }
-  }
