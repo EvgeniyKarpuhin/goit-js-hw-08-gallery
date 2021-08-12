@@ -63,3 +63,36 @@ const galleryItems = [
       description: 'Lighthouse Coast Sea',
     },
   ];
+
+  const images = document.querySelector('ul.js-gallery');
+  makeImages(galleryItems);
+
+  function makeImages(event) {
+    const array = event.map(item => {
+      return
+      `<li class = 'gallery__item'>
+      <img class = 'gallery__image'
+      src = '${item.original}'
+      alt = '${item.description}'
+      width = '320px'
+      >
+      </li>`
+    }).join('');
+    images.innerHTML = array;
+  }
+
+  const img = document.querySelector('img.gallery__image');
+
+  const img = (opened, obsrver) => {
+    e.forEach(open => {
+      if(open.isInterecting) {
+        open.target.src = open.target.dataset.src;
+        open.target.classList.add('show')
+      }
+    });
+  }
+
+const observ = new IntersectionObserver(obs, option);
+img.forEach(item => {
+observ.observe(item);
+});
