@@ -31,4 +31,7 @@ makeGallery(array) {
 
   return itemList;
   })
+
+  this._ulClass = document.querySelector('ul.js-gallery');
+  this._ulClass.append(...this.elementArray);
 }
