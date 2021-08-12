@@ -81,7 +81,13 @@ const galleryItems = [
     images.innerHTML = array;
   }
 
-  const newImage = document.querySelector('img.gallery__image');
+  const newImage = document.querySelectorAll('img.gallery__image');
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  }
 
   const img = (opened, obsrver) => {
     e.forEach(open => {
@@ -92,7 +98,7 @@ const galleryItems = [
     });
   }
 
-const observ = new IntersectionObserver(img);
+const observ = new IntersectionObserver(img, options);
 newImage.forEach(item => {
 observ.observe(item);
 });
