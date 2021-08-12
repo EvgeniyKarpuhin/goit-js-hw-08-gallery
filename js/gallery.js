@@ -77,8 +77,7 @@ closeModal() {
 }
 
 elemClick(e) {
-  if(e.currentTarget === e.target)
-  this.closeModal();
+  if(e.currentTarget === e.target) this.closeModal();
 }
 
 onPress(e) {
