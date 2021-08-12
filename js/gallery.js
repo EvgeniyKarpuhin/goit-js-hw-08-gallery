@@ -33,7 +33,7 @@ makeGallery(array) {
   })
 
   this._ulClass = document.querySelector('ul.js-gallery');
-  this._ulClass.append(...this.elementArray);
+  this._ulClass.append(...this._elementArray);
 }
 
 closeBtn() {
