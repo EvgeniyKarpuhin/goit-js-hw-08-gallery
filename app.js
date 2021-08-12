@@ -103,7 +103,7 @@ const galleryItems = [
 // observ.observe(item);
 // });
 
-const containerLazyImages = document.querySelector('ul.feed');
+const containerLazyImages = document.querySelector('ul.js-gallery');
 makeMarkupForLazyImages(galleryItems);
 
 function makeMarkupForLazyImages(imagesArray) {
@@ -127,7 +127,7 @@ function makeMarkupForLazyImages(imagesArray) {
 
 
 
-const imagesArray = document.querySelectorAll('img.lazyload');
+const imagesArray = document.querySelectorAll('img.lightbox__image');
 
 const options = {
   root: null,
