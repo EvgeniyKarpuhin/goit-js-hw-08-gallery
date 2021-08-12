@@ -81,7 +81,7 @@ const galleryItems = [
     images.innerHTML = array;
   }
 
-  const img = document.querySelector('img.gallery__image');
+  const newImage = document.querySelector('img.gallery__image');
 
   const img = (opened, obsrver) => {
     e.forEach(open => {
