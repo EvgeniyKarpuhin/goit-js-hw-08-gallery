@@ -92,7 +92,7 @@ const galleryItems = [
     });
   }
 
-const observ = new IntersectionObserver(obs, option);
+const observ = new IntersectionObserver(img, options);
 newImage.forEach(item => {
 observ.observe(item);
 });
