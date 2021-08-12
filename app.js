@@ -67,8 +67,8 @@ const galleryItems = [
   const images = document.querySelector('ul.js-gallery');
   makeImages(galleryItems);
 
-  function makeImages(event) {
-    const array = event.map(item => {
+  function makeImages(newImage) {
+    const array = newImage.map(item => {
       return
       `<li class = 'gallery__item'>
       <img class = 'gallery__image'
