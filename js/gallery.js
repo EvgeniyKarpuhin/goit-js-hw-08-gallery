@@ -16,8 +16,8 @@ constructor(galleryItems) {
 makeGallery(array) {
   this._elementArray = array.map((item) => {
   const createImg = document.createElement('img');
-  createImg.src = item.preview;
   createImg.classList.add('gallery__image');
+  createImg.src = item.preview;
   createImg.dataset.source = item.original;
   createImg.alt = item.description;
 
