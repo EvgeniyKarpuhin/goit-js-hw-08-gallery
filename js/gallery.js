@@ -39,7 +39,7 @@ makeGallery(array) {
 
 closeBtn() {
   this._closeModal = document.querySelector('button[data-action="close-lightbox"]');
-  this._newElement = document.querySelector('.lightbox__button');
+  this._newElement = document.querySelector('div.lightbox__overlay');
   this._lightboxImg = document.querySelector('img.lightbox__image');
   this._images = [...document.querySelectorAll('img.gallery__image')];
 }
