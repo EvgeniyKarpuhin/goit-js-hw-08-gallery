@@ -62,7 +62,7 @@ onClick(e) {
 
 openModal() {
   window.addEventListener('keydown', this.onPress.bind(this));
-  document.querySelector('lightbox').classList.add('is-open');
+  document.querySelector('.lightbox').classList.add('is-open');
 }
 
 showImage(source, alt) {
@@ -81,10 +81,10 @@ elemClick(e) {
   if(e.currentTarget === e.target) this.closeModal();
 }
 
-onPress(event) {
-  if(event.code === 'Escape') this.closeModal();
-  if(event.code === 'ArrowRight') this.nextImg();
-  if(event.code === 'ArrowRLeft') this.previousImg();
+onPress(e) {
+  if(e.code === 'Escape') this.closeModal();
+  if(e.code === 'ArrowRight') this.nextImg();
+  if(e.code === 'ArrowRLeft') this.previousImg();
 }
 
 nextImg() {
