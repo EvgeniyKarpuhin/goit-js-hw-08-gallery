@@ -99,7 +99,7 @@ previousImg() {
   let nexus = this._images.indexOf(this._modalImg);
   nexus--;
   if(nexus < 0)
-  nexus = this._images.length -1;
+  nexus = this._images.length - 1;
   this._modalImg = this._images[nexus];
   this.showImage(this._modalImg.dataset.source, this._modalImg.alt);
 }
