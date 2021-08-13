@@ -84,7 +84,7 @@ elemClick(e) {
 onPress(e) {
   if(e.code === 'Escape') this.closeModal();
   if(e.code === 'ArrowRight') this.nextImg();
-  if(e.code === 'ArrowRLeft') this.previousImg();
+  if(e.code === 'ArrowLeft') this.previousImg();
 }
 
 nextImg() {
