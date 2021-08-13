@@ -62,7 +62,7 @@ onClick(e) {
 
 openModal() {
   window.addEventListener('keydown', this.onPress.bind(this));
-  document.querySelector('.lightbox').classList.add('is-open');
+  document.querySelector('div.lightbox').classList.add('is-open');
 }
 
 showImage(source, alt) {
